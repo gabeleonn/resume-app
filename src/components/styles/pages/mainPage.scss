@@ -17,13 +17,15 @@ body, html {
   grid-gap: 1rem;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
-  background-color: $color-lighter;
+  background-color: $color-offwhite;
   box-sizing: border-box;
   width: 100%;
 
   & .card {
-    background-color: $color-offwhite;
+    background-color: $color-white;
     padding: 1.5rem;
+    border-radius: 3px;
+    box-shadow: .1rem .1rem .5rem rgba(0,0,0,.1);
   }
 
   &__header {
@@ -58,11 +60,11 @@ body, html {
   }
 
   &__skills {
-    grid-column: 4 / 6;
+    grid-column: 4 / 7;
   }
 
   &__languages {
-    grid-column: 6 / 10;
+    grid-column: 7 / 10;
   }
 
   &__footer {
