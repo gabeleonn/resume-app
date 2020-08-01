@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Scrollbars } from 'react-custom-scrollbars';
+
 import Header from './header';
 import Bio from './bio';
 import Shortcuts from './shortcuts';
@@ -13,18 +15,26 @@ import Footer from './footer';
 
 const index = () => {
   return (
-    <div className="main main--resume">
-      <Header />
-      <Bio />
-      <Shortcuts />
-      <Contact />
-      <Projects />
-      <Experience />
-      <Education />
-      <Skills />
-      <Languages />
-      <Footer />
-    </div>
+    <Scrollbars autoHide
+      autoHideTimeout={1000}
+      autoHideDuration={500}
+      autoHeight
+      autoHeightMin={0}
+      autoHeightMax={'100vh'}
+    >
+      <div className="main main--resume">
+        <Header />
+        <Bio />
+        <Contact />
+        <Shortcuts />
+        <Experience />
+        <Projects />
+        <Education />
+        <Skills />
+        <Languages />
+        <Footer />
+      </div>
+    </Scrollbars>
   );
 };
 

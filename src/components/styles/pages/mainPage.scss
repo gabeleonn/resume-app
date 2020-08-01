@@ -9,27 +9,68 @@ body, html {
   font-size: $font-small;
   width: 100vw;
   color: $color-darker;
+  background-color: transparent;
 }
 
 .main--resume {
   display: grid;
   grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
   background-color: $color-lighter;
+  box-sizing: border-box;
+  width: 100%;
+
+  & .card {
+    background-color: $color-offwhite;
+    padding: 1.5rem;
+  }
 
   &__header {
     background-color: $color-darker;
     height: 10vh;
     color: $color-offwhite;
+    grid-column: 1 / 13;
+  }
+
+  &__bio {
+    grid-column: 4 / 10;
+  }
+
+  &__contact {
+    grid-column: 10 / 12;
+  }
+
+  &__shortcuts {
+    grid-column: 2 / 4;
+  }
+
+  &__projects {
+    grid-column: 10 / 12;
+  }
+
+  &__experience {
+    grid-column: 4 / 10;
+  }
+
+  &__education {
+    grid-column: 4 / 10;
+  }
+
+  &__skills {
+    grid-column: 4 / 6;
+  }
+
+  &__languages {
+    grid-column: 6 / 10;
   }
 
   &__footer {
     background-color: $color-darker;
     height: 15vh;
     color: $color-offwhite;
+    grid-column: 1 / 13;
   }
 }
 
-.card {
-  background-color: $color-offwhite;
-  padding: 1.5rem;
-}
+
