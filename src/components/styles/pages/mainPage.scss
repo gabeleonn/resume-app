@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: Roboto, sans-serif;
+  font-size: $font-small;
+  width: 100vw;
+  color: $color-darker;
+}
+
+.main--resume {
+  display: grid;
+  grid-gap: 1rem;
+  background-color: $color-lighter;
+
+  &__header {
+    background-color: $color-darker;
+    height: 10vh;
+    color: $color-offwhite;
+  }
+
+  &__footer {
+    background-color: $color-darker;
+    height: 15vh;
+    color: $color-offwhite;
+  }
+}
+
+.card {
+  background-color: $color-offwhite;
+  padding: 1.5rem;
+}

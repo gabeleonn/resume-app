@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import adminPage from './adminPage/adminPage';
-import mainPage from './mainPage/mainPage';
+import adminPage from './adminPage';
+import mainPage from './mainPage';
 
 const Router = () => {
   return (
