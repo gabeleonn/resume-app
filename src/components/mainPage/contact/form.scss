@@ -58,12 +58,21 @@
       height: 3px;
       border-radius: 100px;
       background-color: $color-darker;
-      position: absolute;
-      top: 5%;
-      right: 3%;
 
-      &:hover {
-        cursor: pointer;
+
+      &__div {
+        width: 3em;
+        height: 1em;
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
