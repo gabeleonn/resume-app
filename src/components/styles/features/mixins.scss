@@ -1,0 +1,25 @@
+@mixin responsive($type) {
+  @if $type == tab-up {
+		@media (max-width: 750px) {
+      @content;
+    }
+  }
+
+	@if $type == tab {
+		@media (max-width: 900px) {
+      @content;
+    }
+  }
+
+	@if $type == tab-down {
+		@media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+	@if $type == cellphone {
+		@media (max-width: 600px) {
+      @content;
+    }
+  }
+}
