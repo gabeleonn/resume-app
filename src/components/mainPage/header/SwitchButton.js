@@ -1,4 +1,5 @@
 import React from 'react';
+import 'switchButton.scss';
 
 const SwitchButton = () => {
   return (

@@ -91,6 +91,36 @@ body, html {
 
   &__contact {
     grid-column: 10 / 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .cto {
+      font-size: $font-regular;
+      color: $color-lighter;
+      margin-bottom: 1em;
+    }
+
+    & .button {
+      padding: 1em 1.5em;
+      background-color: $color-highlight;
+      border: 3px solid darken($color-highlight, 3%);
+      border-radius: 3px;
+      color: $color-offwhite;
+      transition: all .1s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($color-highlight, 5%);
+        border: 3px solid lighten($color-highlight, 8%);
+        transform: translateY(-1px);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 
   &__shortcuts {
@@ -142,7 +172,5 @@ body, html {
     }
   }
 }
-
-@import '../components/switchButton';
 
 
