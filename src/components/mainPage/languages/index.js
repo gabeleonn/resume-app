@@ -3,7 +3,9 @@ import React from 'react';
 const index = () => {
   return (
     <div className="main--resume__languages card">
-      Languages
+      <h3 className="card__title">Languages</h3>
+      <div className="border--bottom"></div>
+      content
     </div>
   );
 };

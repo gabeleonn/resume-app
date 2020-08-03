@@ -3,7 +3,9 @@ import React from 'react';
 const index = () => {
   return (
     <div className="main--resume__experience card">
-      Experience
+      <h3 className="card__title">Experience</h3>
+      <div className="border--bottom"></div>
+      content
     </div>
   );
 };
