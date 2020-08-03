@@ -20,6 +20,7 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     & input, textarea {
       display: block;
@@ -50,6 +51,20 @@
       text-align: center;
       margin-top: 2em;
       margin-bottom: 1em;
+    }
+
+    & .x-icon {
+      width: 1.5em;
+      height: 3px;
+      border-radius: 100px;
+      background-color: $color-darker;
+      position: absolute;
+      top: 5%;
+      right: 3%;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

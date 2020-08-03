@@ -21,6 +21,7 @@ const Index = () => {
       {formToggle ?
         (<div className="form--blur">
           <form className="form">
+            <div className="x-icon" onClick={handleForm}></div>
             <h2 className="title">Get in touch</h2>
             <input type="text" placeholder="Name/Company" />
             <input type="email" placeholder="Email" />
