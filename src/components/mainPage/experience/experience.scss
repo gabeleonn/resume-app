@@ -1,5 +1,102 @@
 @import '../../styles/features/variables';
+@import '../../styles/features/mixins';
 
-.experience {
+.main--resume__experience {
+  & ul {
+    list-style: none;
 
+    & li {
+      margin-left: 7em;
+      margin-right: 5em;
+      position: relative;
+
+      &:not(:last-child) {
+        &::before {
+          content: "";
+          width: 2px;
+          height: 112%;
+          background-color: $color-lighter;
+          position: absolute;
+          bottom: -120%;
+          left: -2.3em;
+          transform: translateY(-50%);
+        }
+      }
+
+      &::after {
+        content: "";
+        width: 1em;
+        height: 1em;
+        border: 3px solid $color-lighter;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        left: -3em;
+        transform: translateY(-50%);
+      }
+
+      & .experience__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+
+        & .right {
+          padding-right: 2em;
+        }
+      }
+
+      & .job-title {
+        font-size: $font-medium;
+        font-weight: 700;
+      }
+
+      & .city {
+        color: $color-lighter;
+      }
+
+      & .company {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        text-decoration: none;
+        color: $color-lighter;
+
+        &::before {
+          content: "";
+          width: 10%;
+          height: 2px;
+          position: absolute;
+          background-color: $color-light;
+          top: 50%;
+          left: -25%;
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          color: $color-highlight;
+        }
+      }
+
+      & .time {
+        font-size: $font-small;
+        color: $color-lighter;
+      }
+
+      & .since {
+        font-weight: 700;
+      }
+    }
+
+    & .active::after {
+      content: "";
+      width: 1em;
+      height: 1em;
+      border: 3px solid $color-highlight;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+      left: -3em;
+      transform: translateY(-50%);
+    }
+  }
 }

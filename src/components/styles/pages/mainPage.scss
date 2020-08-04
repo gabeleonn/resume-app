@@ -6,7 +6,7 @@
 
 body, html {
   font-family: Roboto, sans-serif;
-  font-size: $font-small;
+  font-size: $font-smaller;
   width: 100vw;
   color: $color-darker;
   background-color: transparent;
@@ -144,6 +144,14 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    & .link {
+      color: $color-highlight;
+      font-weight: 500;
+      font-size: $font-regular;
+      text-align: center;
+      margin: 2em 0;
+    }
   }
 
   &__education {
