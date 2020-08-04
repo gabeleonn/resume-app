@@ -79,7 +79,7 @@ body, html {
         }
 
         &__name {
-          font-size: $font-big;
+          font-size: $font-bigger;
         }
       }
     }
@@ -149,6 +149,8 @@ body, html {
   &__education {
     grid-column: 4 / 10;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
   }
 
   &__skills {

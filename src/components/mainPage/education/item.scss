@@ -1,0 +1,41 @@
+@import '../../styles/features/variables';
+
+.education__item {
+  position: relative;
+  padding-left: 16em;
+
+
+  &:not(:last-child) {
+    margin-bottom: 4em;
+  }
+
+  & .college {
+    font-size: $font-medium;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      width: .4em;
+      height: .4em;
+      border: 2px solid $color-lighter;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 8em;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  & .title {
+    color: $color-lighter;
+  }
+
+  & .from-to {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    color: $color-lighter;
+  }
+}
