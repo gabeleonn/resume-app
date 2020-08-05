@@ -8,13 +8,13 @@ const Index = () => {
 
   return (
     <div className="main--resume__experience card">
-      <h3 className="card__title">Experience</h3>
+      <h3 className="card__title">Experiência</h3>
       <div className="border--bottom" />
       <ul>
         {experience.map((e) => <Experience key={e.company} experience={e} />)}
       </ul>
       {experience.length < 2
-        ? <button to="/" type="button" className="link">See more</button> : ''}
+        ? <button to="/" type="button" className="link">Ver mais</button> : ''}
     </div>
   );
 };

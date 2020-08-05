@@ -18,8 +18,8 @@ const Index = () => {
 
   return (
     <div className="main--resume__contact card">
-      <p className="cto">Get in touch!</p>
-      <button onClick={handleForm} type="button" className="button">Send Email</button>
+      <p className="cto">Entre em contato!</p>
+      <button onClick={handleForm} type="button" className="button">Enviar email</button>
       {formToggle
         ? (
           <div className="form--blur">

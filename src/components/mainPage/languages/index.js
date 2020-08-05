@@ -6,7 +6,7 @@ const Index = () => {
 
   return (
     <div className="main--resume__languages card">
-      <h3 className="card__title">Languages</h3>
+      <h3 className="card__title">Línguas</h3>
       <div className="border--bottom" />
       <ul>
         {languages.map((item) => {

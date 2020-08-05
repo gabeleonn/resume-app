@@ -8,7 +8,7 @@ const Index = () => {
 
   return (
     <div className="main--resume__projects card">
-      <h3 className="card__title">Projects</h3>
+      <h3 className="card__title">Projetos</h3>
       <div className="border--bottom" />
       {projects.map((project) => <Project key={project.name} props={project} />)}
     </div>

@@ -21,6 +21,7 @@ export const initialState = {
 
   },
   loading: false,
+  lang: 'pt',
 };
 
 export const fetchInfo = (state = initialState) => {
@@ -45,9 +46,9 @@ export const ptInfo = (state = initialState) => {
     data: {
       userName: 'Gabriel Leon',
       jobTitle: 'Desenvolvedor Javascript Fullstack',
-      bio: 'Apaixonado por computadores desde muito cedo. Aprendi com meu pai a formatar e trocar peças do meu computador. Depois de descobrir o mundo do software. Nesse período tive meu primeiro contato com programação. Criei e modifiquei diversas CMS. Desenvolvi jogos com FPX Creator, Unity. E enfim, depois de muito ver, entrei para a área de Design Gráfico, onde aprendi muito sobre UI/UX e hoje estudo o desenvolvimento backend com Java e Node.js.',
+      bio: 'Apaixonado por computadores desde muito cedo. Aprendi com meu pai a formatar e trocar peças do meu computador. Depois de descobrir o mundo do software. Nesse período tive meu primeiro contato com programação. Criei e modifiquei diversas CMS e sites. E enfim, depois de algum tempo entrei para a área de Design Gráfico, onde aprendi muito sobre UI/UX e hoje estudo o desenvolvimento de backends com Java e Node.js.',
       email: 'gableonn@gmail.com',
-      picture: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.business2community.com%2Fsocial-media%2Fimportance-profile-picture-career-01899604&psig=AOvVaw352wAC6rFqOz3cCEulZxVE&ust=1596675004338000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjxyYXsgusCFQAAAAAdAAAAABAD',
+      picture: 'https://i.imgur.com/mZTfvm1.png',
       socialMedia: {
         instagram: 'https://instagram.com/gabeleonn',
         github: 'https://github.com/gabeleonn',

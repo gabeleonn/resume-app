@@ -10,7 +10,7 @@ const Index = () => {
 
   return (
     <div className="main--resume__shortcuts card">
-      <p className="cto">Social Media</p>
+      <p className="cto">Mídias Sociais</p>
       <div className="icons">
         <a href={instagram} target="_blank" rel="noopener noreferrer" className="icon"><FaInstagram /></a>
         <a href={linkedin} target="_blank" rel="noopener noreferrer" className="icon"><FaLinkedin /></a>

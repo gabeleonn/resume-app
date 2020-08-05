@@ -7,7 +7,7 @@ const Index = () => {
 
   return (
     <div className="main--resume__skills card">
-      <h3 className="card__title">Skills</h3>
+      <h3 className="card__title">Habilidades</h3>
       <div className="border--bottom" />
       <ul>
         {skills.map((el) => <li key={el}>{el}</li>)}
