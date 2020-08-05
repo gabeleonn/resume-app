@@ -1,9 +1,13 @@
 @import '../../styles/features/variables';
+@import '../../styles/features/mixins';
 
 .education__item {
   position: relative;
   padding-left: 16em;
 
+  @include responsive(tab-up) {
+    padding-left: 10em;
+  }
 
   &:not(:last-child) {
     margin: 1.5em 0 3em 0;
@@ -27,6 +31,10 @@
       top: 50%;
       left: 8em;
       transform: translate(-50%, -50%);
+
+      @include responsive(tab-up) {
+        left: 5em;
+      }
     }
   }
 
@@ -42,5 +50,9 @@
     transform: translateY(-50%);
     font-weight: 700;
     color: $color-lighter;
+
+    @include responsive(tab-up) {
+      left: 0;
+    }
   }
 }
