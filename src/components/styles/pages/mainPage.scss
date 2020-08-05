@@ -103,11 +103,11 @@ body, html {
     }
 
     @include responsive(tab) {
-      height: 70vh;
+      height: 60vh;
     }
 
     @include responsive(cellphone) {
-      height: 70vh;
+      height: fit-content;
     }
 
     & .image {
@@ -126,7 +126,7 @@ body, html {
 
       @include responsive(tab-down) {
         top: 50%;
-        left: 15%;
+        left: 20%;
       }
 
       @include responsive(tab) {
@@ -135,7 +135,7 @@ body, html {
       }
 
       @include responsive(cellphone) {
-        top: 25%;
+        top: 30%;
         left: 50%;
       }
 
@@ -150,17 +150,17 @@ body, html {
 
       @include responsive(tab-down) {
         padding: 1.5em;
-        padding-left: 30%;
+        padding-left: 40%;
       }
 
       @include responsive(tab) {
         padding: 1.5em;
-        padding-top: 30%;
+        padding-top: 40%;
       }
 
       @include responsive(cellphone) {
         padding: 1.5em;
-        padding-top: 55%;
+        padding-top: 70%;
       }
     }
 
