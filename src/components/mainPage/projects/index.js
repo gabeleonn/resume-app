@@ -1,24 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import Project from './Project';
 
-const index = () => {
-  const projects = [
-    {
-      name: 'Project 1',
-      status: 'In-Progress',
-      link: 'http://google.com',
-    },
-    {
-      name: 'Project 2',
-      status: 'In-Progress',
-      link: 'http://google.com',
-    },
-    {
-      name: 'Project 3',
-      status: 'Done',
-      link: 'http://google.com',
-    },
-  ];
+const Index = () => {
+  const { projects } = useSelector((state) => state.resume.data);
 
   return (
     <div className="main--resume__projects card">
@@ -29,4 +15,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

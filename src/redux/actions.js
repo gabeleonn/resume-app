@@ -4,13 +4,9 @@ export const {
   Types,
   Creators,
 } = createActions({
-  loginFetch: ['email', 'password'],
-  loginSuccess: ['user'],
-  loginFailure: ['error'],
-  authCheck: [null],
-  authSuccess: ['token'],
-  authFailure: ['error'],
-  logoutFetch: [null],
+  fetchInfo: [null],
+  ptInfo: ['data'],
+  enInfo: ['data'],
 });
 
 export default Creators;

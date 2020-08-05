@@ -1,11 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const index = () => {
+const Index = () => {
+  const { bio } = useSelector((state) => state.resume.data);
+
   return (
     <div className="main--resume__bio card">
-      <h2 className="">Bio</h2>
+      <div className="image" />
+      <div className="text">
+        <h3 className="card__title">Bio</h3>
+        <div className="border--bottom" />
+        {bio}
+      </div>
     </div>
   );
 };
 
-export default index;
+export default Index;

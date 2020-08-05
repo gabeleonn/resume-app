@@ -1,18 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import './item.scss';
 import Item from './Item';
 
-const index = () => {
-  const education = [
-    {
-      college: 'College Name', since: '2017', to: '2019', title: 'Tecnology Marketing',
-    },
-
-    {
-      college: 'College Name 1', since: '2017', to: '2019', title: 'Tecnology Marketing',
-    },
-  ];
+const Index = () => {
+  const { education } = useSelector((state) => state.resume.data);
 
   return (
     <div className="main--resume__education card">
@@ -25,4 +18,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

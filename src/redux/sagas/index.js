@@ -1,14 +1,12 @@
-import { put, takeEvery, all } from 'redux-saga/effects';
+import { put, takeLatest, all } from 'redux-saga/effects';
 
 import actions from '../actions';
 
-import { login, auth, logout } from './authSaga';
+import { fetchInfo } from './resumeSaga';
 
 export default function* rootSaga() {
   yield all([
-    takeEvery('LOGIN_FETCH', login),
-    takeEvery('AUTH_CHECK', auth),
-    takeEvery('LOGOUT_FETCH', logout),
-    put(actions.authCheck()),
+    takeLatest('FETCH_INFO', fetchInfo),
+    put(actions.fetchInfo()),
   ]);
 }

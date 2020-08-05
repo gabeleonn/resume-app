@@ -1,16 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const index = () => {
+const Index = () => {
+  const { jobTitle, userName } = useSelector((state) => state.resume.data);
+
   return (
     <div className="main--resume__header">
-      <div className="stripe--black"></div>
+      <div className="stripe--black" />
       <div className="stripe--white">
-        <div className="stripe--white__border--left"></div>
-        <p className="stripe--white__title">Job Title</p>
-        <h2 className="stripe--white__name">User Name</h2>
+        <div className="stripe--white__border--left" />
+        <p className="stripe--white__title">{jobTitle}</p>
+        <h2 className="stripe--white__name">{userName}</h2>
       </div>
     </div>
   );
 };
 
-export default index;
+export default Index;

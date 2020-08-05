@@ -48,6 +48,17 @@
       & .job-title {
         font-size: $font-medium;
         font-weight: 700;
+
+        &::before {
+          content: "";
+          width: 2%;
+          height: 2px;
+          position: absolute;
+          background-color: $color-light;
+          top: 33%;
+          left: 33%;
+          transform: translateY(-50%);
+        }
       }
 
       & .city {
@@ -57,20 +68,9 @@
       & .company {
         position: absolute;
         top: 20%;
-        left: 20%;
+        left: 40%;
         text-decoration: none;
         color: $color-lighter;
-
-        &::before {
-          content: "";
-          width: 10%;
-          height: 2px;
-          position: absolute;
-          background-color: $color-light;
-          top: 50%;
-          left: -25%;
-          transform: translateY(-50%);
-        }
 
         &:hover {
           color: $color-highlight;

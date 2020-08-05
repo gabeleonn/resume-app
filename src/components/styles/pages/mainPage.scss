@@ -87,7 +87,29 @@ body, html {
 
   &__bio {
     grid-column: 4 / 10;
-    height: fit-content;
+    height: 40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .image {
+      width: 30vh;
+      height: 30vh;
+      border-radius: 50%;
+      background-color: $color-light;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+
+    & .text {
+      padding: 1.5em;
+      padding-left: 17vh;
+      text-align: justify;
+      font-size: $font-regular;
+    }
   }
 
   &__contact {
@@ -128,6 +150,31 @@ body, html {
   &__shortcuts {
     grid-column: 2 / 4;
     height: fit-content;
+
+    & .icons {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    & .cto {
+      text-align: center;
+      margin-bottom: 2em;
+      font-weight: 600;
+      font-size: $font-regular;
+    }
+
+    & .icon {
+      font-size: $font-big;
+      color: $color-lighter;
+
+      &:hover {
+        color: $color-highlight;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1em;
+      }
+    }
   }
 
   &__projects {

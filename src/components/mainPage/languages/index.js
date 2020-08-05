@@ -1,19 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-const index = () => {
-
-  const languages = [
-    { language: "English", proficiency: "Advanced" },
-    { language: "French", proficiency: "Basic" },
-    { language: "Portuguese", proficiency: "Native" },
-  ];
+const Index = () => {
+  const { languages } = useSelector((state) => state.resume.data);
 
   return (
     <div className="main--resume__languages card">
       <h3 className="card__title">Languages</h3>
-      <div className="border--bottom"></div>
+      <div className="border--bottom" />
       <ul>
-        {languages.map(item => {
+        {languages.map((item) => {
           return (
             <li key={item.language}>
               <p className="lang">{item.language}</p>
@@ -26,4 +22,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
