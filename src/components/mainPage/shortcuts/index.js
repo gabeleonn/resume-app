@@ -3,18 +3,21 @@
 import React from 'react';
 
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
 
-const index = () => {
+const Index = () => {
+  const { instagram, linkedin, github } = useSelector((state) => state.resume.data.socialMedia);
+
   return (
     <div className="main--resume__shortcuts card">
       <p className="cto">Social Media</p>
       <div className="icons">
-        <a href="/" target="_blank" rel="noopener noreferrer" className="icon"><FaInstagram /></a>
-        <a href="/" target="_blank" rel="noopener noreferrer" className="icon"><FaLinkedin /></a>
-        <a href="/" target="_blank" rel="noopener noreferrer" className="icon"><FaGithub /></a>
+        <a href={instagram} target="_blank" rel="noopener noreferrer" className="icon"><FaInstagram /></a>
+        <a href={linkedin} target="_blank" rel="noopener noreferrer" className="icon"><FaLinkedin /></a>
+        <a href={github} target="_blank" rel="noopener noreferrer" className="icon"><FaGithub /></a>
       </div>
     </div>
   );
 };
 
-export default index;
+export default Index;

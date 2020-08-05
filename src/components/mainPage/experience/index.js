@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { useSelector } from 'react-redux';
 import Experience from './Experience';
@@ -14,7 +13,8 @@ const Index = () => {
       <ul>
         {experience.map((e) => <Experience key={e.company} experience={e} />)}
       </ul>
-      <Link to="/" className="link">See more</Link>
+      {experience.length < 2
+        ? <button to="/" type="button" className="link">See more</button> : ''}
     </div>
   );
 };

@@ -32,7 +32,7 @@ body, html {
 
   & .card {
     background-color: $color-white;
-    padding: 1.5em;
+    padding: 2em;
     border-radius: 3px;
     box-shadow: .1em .1em .4em rgba(0,0,0,.1);
 
@@ -76,6 +76,7 @@ body, html {
         &__title {
           color: $color-lighter;
           text-transform: capitalize;
+          font-size: $font-regular;
         }
 
         &__name {
@@ -104,11 +105,15 @@ body, html {
       transform: translate(-50%, -50%);
     }
 
-    & .text {
+    & .bio {
       padding: 1.5em;
       padding-left: 17vh;
+    }
+
+    & .text {
       text-align: justify;
       font-size: $font-regular;
+      line-height: 1.5em;
     }
   }
 
@@ -198,6 +203,14 @@ body, html {
       font-size: $font-regular;
       text-align: center;
       margin: 2em 0;
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+        color: lighten($color-highlight, 10%);
+      }
     }
   }
 

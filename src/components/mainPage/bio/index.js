@@ -7,10 +7,10 @@ const Index = () => {
   return (
     <div className="main--resume__bio card">
       <div className="image" />
-      <div className="text">
+      <div className="bio">
         <h3 className="card__title">Bio</h3>
         <div className="border--bottom" />
-        {bio}
+        <p className="text">{bio}</p>
       </div>
     </div>
   );

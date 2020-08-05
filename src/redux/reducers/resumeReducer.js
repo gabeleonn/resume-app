@@ -45,21 +45,19 @@ export const ptInfo = (state = initialState) => {
     data: {
       userName: 'Gabriel Leon',
       jobTitle: 'Desenvolvedor Javascript Fullstack',
-      bio: 'Mauris eleifend id turpis id tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id tortor tempus, pretium diam scelerisque, elementum dui. Nam risus urna, pharetra sed hendrerit eu, mattis vel nunc. Nulla facilisi. Suspendisse rutrum lectus magna, nec molestie libero vehicula sit amet.',
+      bio: 'Apaixonado por computadores desde muito cedo. Aprendi com meu pai a formatar e trocar peças do meu computador. Depois de descobrir o mundo do software. Nesse período tive meu primeiro contato com programação. Criei e modifiquei diversas CMS. Desenvolvi jogos com FPX Creator, Unity. E enfim, depois de muito ver, entrei para a área de Design Gráfico, onde aprendi muito sobre UI/UX e hoje estudo o desenvolvimento backend com Java e Node.js.',
       email: 'gableonn@gmail.com',
       picture: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.business2community.com%2Fsocial-media%2Fimportance-profile-picture-career-01899604&psig=AOvVaw352wAC6rFqOz3cCEulZxVE&ust=1596675004338000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjxyYXsgusCFQAAAAAdAAAAABAD',
       socialMedia: {
         instagram: 'https://instagram.com/gabeleonn',
         github: 'https://github.com/gabeleonn',
-        linkedin: 'https://github.com/gabeleonn',
+        linkedin: 'https://linkedin.com/in/gabeleonn',
       },
       experience: [
         {
           isActual: true,
           company: 'DBM Contact Center',
           jobTitle: 'Captador de Recursos',
-          city: 'Curitiba',
-          state: 'Paraná',
           since: 'Fevereiro de 2020',
           to: 'Atual',
           time: '6 meses',
@@ -69,8 +67,6 @@ export const ptInfo = (state = initialState) => {
           isActual: true,
           company: 'Freelancer',
           jobTitle: 'Desenvolvedor Web',
-          city: 'Curitiba',
-          state: 'Paraná',
           since: 'Novembro de 2018',
           to: 'Atual',
           time: '1 ano e 9 meses',

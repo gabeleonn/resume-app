@@ -14,10 +14,10 @@
         &::before {
           content: "";
           width: 2px;
-          height: 112%;
+          height: 110%;
           background-color: $color-lighter;
           position: absolute;
-          bottom: -120%;
+          bottom: -115%;
           left: -2.3em;
           transform: translateY(-50%);
         }
@@ -48,29 +48,13 @@
       & .job-title {
         font-size: $font-medium;
         font-weight: 700;
-
-        &::before {
-          content: "";
-          width: 2%;
-          height: 2px;
-          position: absolute;
-          background-color: $color-light;
-          top: 33%;
-          left: 33%;
-          transform: translateY(-50%);
-        }
-      }
-
-      & .city {
-        color: $color-lighter;
+        margin-bottom: .3em;
       }
 
       & .company {
-        position: absolute;
-        top: 20%;
-        left: 40%;
         text-decoration: none;
         color: $color-lighter;
+        font-size: $font-regular;
 
         &:hover {
           color: $color-highlight;

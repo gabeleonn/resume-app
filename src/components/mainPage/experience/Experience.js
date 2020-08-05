@@ -4,7 +4,7 @@ import './experience.scss';
 
 const Experience = ({ experience }) => {
   const {
-    isActual, company, jobTitle, city, state, since, to, time, website,
+    isActual, company, jobTitle, since, to, time, website,
   } = experience;
 
   return (
@@ -12,7 +12,6 @@ const Experience = ({ experience }) => {
       <div className="experience__item">
         <div className="left">
           <p className="job-title">{jobTitle}</p>
-          <p className="city">{city}, {state}</p>
           <a href={website} target="_blank" rel="noopener noreferrer" className="company">{company}</a>
         </div>
         <div className="right">
