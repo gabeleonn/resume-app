@@ -1,68 +1,59 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Currículo ReactJS & Node.js
+> Um site simples, que apresenta informações pessoais e de formação sobre alguém.
 
-## Available Scripts
+License [MIT]
 
-In the project directory, you can run:
+Este site é bem simples, usa ReactJS para composição da página e seus componentes, Node.js para requisições backend feitas pelo Administrador e Redux para controlar o estado global da aplicação.(_Em caso de dúvidas entrar em [contato][contato]._)
 
-### `yarn start`
+![](fullpage.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Necessário para instalação
+OS X & Linux & Windows:
+- Yarn/NPM
+- Node.js ^v12.18.2
+-
+> Comando para instalar os pacotes com Yarn
+```sh
+    yarn
+```
+> Comando para instalar os pacotes com NPM
+```sh
+    npm install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Exemplo de uso
+Roda o servidor para desenvolvimento
+```sh
+    yarn start
+```
 
-### `yarn test`
+Cria os arquivos para produção
+```sh
+    yarn build
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_Para mais informações acesse [Create-React-App][react-app]._
 
-### `yarn build`
+## Histórico de lançamentos
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* 0.0.1
+    * Versão estática, sem backend, apenas ReactJS & Redux.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Meta
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Gabriel Leon – [@gabeleonn](https://instagram.com/gabeleonn) – _[gableonn@gmail.com][contato]._
+[https://github.com/gabeleonn/](https://github.com/gabeleonn/)
+---
+Distribuído sob a licença MIT. Entre em [contato][contato] para mais informações.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Faça o _fork_ do projeto (<https://github.com/gabeleonn/resume-app/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -m 'Type: Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[contato]: mailto:gableonn@gmail.com
+[react-app]: https://create-react-app.dev/docs/getting-started/
